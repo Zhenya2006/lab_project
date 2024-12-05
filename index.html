@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strolls Smoke - Кальянна</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesProject.css">
+</head>
+<body>
+    <!-- Хедер -->
+    <header>
+        <img src="1233.jpg" alt="Логотип Strolls Smoke">
+        <nav>
+            <a href="https://zhenya2006.github.io/pub.pokatylki/index.html">Головна</a>
+            <a href="task1.html">Про нас</a>
+            <a href="#">Контакти</a>
+        </nav>
+        <!-- Кнопка для мобільного меню -->
+        <button class="mobile-menu-button">Меню</button>
+    </header>
+
+    <!-- Мобільне меню -->
+    <nav class="mobile-nav">
+        <a href="https://zhenya2006.github.io/pub.pokatylki/index.html">Головна</a>
+        <a href="task1.html">Про нас</a>
+        <a href="#">Контакти</a>
+    </nav>
+
+    <div class="container">
+        <main>
+            <h1>Наші Продукти</h1>
+            <section class="product-card">
+                <img src="kalian.jpg" alt="Кальян Strolls Smoke">
+                <article>
+                    <h2>Замовлення кальяну</h2>
+                    <p><strong>Насолоджуйтесь</strong> унікальним ароматом кальянів <em>Strolls Smoke</em>.</p>
+                    <p><mark>600 грн</mark></p>
+                    <a href="task5.html"><button>Забронювати стіл</button></a>
+                </article>
+            </section>
+
+            <section class="product-card">
+                <img src="product2.jpg" alt="Продукт 2">
+                <article>
+                    <h2>Свинні вуха</h2>
+                    <p>Найкращщі свинні вуха до пива.</p>
+                    <p><mark>126 грн</mark></p>
+                    <a href="task5.html"><button>Замовити до столику</button></a>
+                </article>
+            </section>
+
+            <section class="product-card">
+                <img src="product3.jpg" alt="Продукт 3">
+                <article>
+                    <h2>Kronenburg Blank</h2>
+                    <p>Ніжніше пиво привезене вчора із германії.</p>
+                    <p><mark>65 грн</mark></p>
+                    <a href="task5.html"><button>Замовити до столику</button></a>
+                </article>
+            </section>
+
+            <section class="product-card">
+                <img src="product4.jpg" alt="Продукт 4">
+                <article>
+                    <h2>Фірмова піцца</h2>
+                    <p>Це та сама піцца яку ти шукав. Не перевершені комбінації смаків м'яса. саме те що треба до столу</p>
+                    <p><mark>160 грн</mark></p>
+                    <a href="task5.html"><button>Детальніше</button></a>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        &copy; 2024 Strolls Smoke - Кальянна. Всі права захищені.
+    </footer>
+
+    <!-- Підключення JavaScript -->
+    <script>
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileNav.classList.toggle('show'); // Додає/вилучає клас для відображення меню
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Завдання 4</title>
+    <title>Таблиця</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid black;
+            cellpadding: 10;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        colgroup col:first-child, 
+        colgroup col:nth-child(2) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Таблиця з даними</h2>
+
+    <!-- Назва таблиці -->
+    <table border="1" cellpadding="5">
+        <caption>Дані про товари</caption>
+
+        <!-- Групування колонок (перші дві мають інший колір фону) -->
+        <colgroup>
+            <col span="1" style="background-color: #ffcccc;">
+            <col span="1" style="background-color: #ffcccc;">
+            <col span="6">
+        </colgroup>
+
+        <!-- Заголовок таблиці -->
+        <thead>
+            <tr>
+                <th colspan="2">Категорії</th>
+                <th colspan="6">Опис товарів</th>
+            </tr>
+            <tr>
+                <th>Товар</th>
+                <th>Код</th>
+                <th>Ціна</th>
+                <th>Кількість</th>
+                <th>Опис</th>
+                <th>Дата надходження</th>
+                <th>Продавець</th>
+                <th>Рейтинг</th>
+            </tr>
+        </thead>
+
+        <!-- Тіло таблиці -->
+        <tbody>
+            <tr>
+                <td rowspan="2">Ноутбук</td>
+                <td rowspan="2">NB123</td>
+                <td>25,000 грн</td>
+                <td>10</td>
+                <td colspan="2">Сучасний ноутбук з 16GB RAM</td>
+                <td>01.09.2024</td>
+                <td>5 зірок</td>
+            </tr>
+            <tr>
+                <td>23,500 грн</td>
+                <td>8</td>
+                <td>Знижка</td>
+                <td>02.09.2024</td>
+                <td>4.5 зірок</td>
+            </tr>
+            <tr>
+                <td>Смартфон</td>
+                <td>SM456</td>
+                <td colspan="3">12,000 грн - нова модель</td>
+                <td>05.09.2024</td>
+                <td>Магазин "ТехноСвіт"</td>
+                <td>4.7 зірок</td>
+            </tr>
+            <tr>
+                <td>Телевізор</td>
+                <td>TV789</td>
+                <td>18,000 грн</td>
+                <td>5</td>
+                <td>Ультра HD, Smart TV</td>
+                <td colspan="3">Пряме постачання від виробника</td>
+            </tr>
+        </tbody>
+
+        <!-- Підвал таблиці -->
+        <tfoot>
+            <tr>
+                <td colspan="8">Усього товарів: 3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
