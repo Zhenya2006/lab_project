@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення - Strolls Smoke</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesProject.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .main {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        .order-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .order-form input, .order-form select, .order-form textarea, .order-form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .order-form button {
+            background-color: #ff7e5f;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .order-form button:hover {
+            background-color: #feb47b;
+        }
+        .footer {
+            background-color: #2d1f1c;
+            color: #ff7e5f;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Хедер -->
+    <header class="header">
+        <div class="container header-container">
+            <img src="1233.jpg" alt="Логотип Strolls Smoke" class="logo">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Головна</a>
+                <a href="about.html" class="nav-link">Про нас</a>
+                <a href="https://zhenya2006.github.io/pub.pokatylki/index.html" class="nav-link">Контакти</a>
+                <button class="login-btn">Вхід</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основний контент -->
+    <main class="main">
+        <h1 class="main-title">Замовлення</h1>
+        <form class="order-form">
+            <input type="text" placeholder="Ваше ім'я" required>
+            <input type="tel" placeholder="Ваш номер телефону" required>
+            <select required>
+                <option value="">Оберіть продукт</option>
+                <option value="hookah">Кальян</option>
+                <option value="snack">Закуска</option>
+                <option value="drink">Напій</option>
+            </select>
+            <textarea placeholder="Коментар (за бажанням)"></textarea>
+            <button type="submit">Надіслати замовлення</button>
+        </form>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2024 Strolls Smoke - Кальянна. Всі права захищені.</p>
+            <a href="https://zhenya2006.github.io/pub.pokatylki/index.html" class="btn">Напишіть нам</a>
+        </div>
+    </footer>
+</body>
+</html>
